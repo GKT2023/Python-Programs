@@ -20,3 +20,20 @@ if total == n :
     print("no is armstrong")
 else:
     print("no is not a armstrong num")
+
+
+## another method
+    
+n = int(input("enter a no: "))
+
+temp = n
+total = 0
+while temp > 0:
+    d = temp % 10
+    total += d ** len(str(n))
+    temp = temp // 10
+
+if total == n:
+    print("Armstrong")
+else:
+    print("Not a armstrong number")
