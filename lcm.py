@@ -33,7 +33,7 @@ def getLCM(x,y):
         if (largest % x == 0 ) and  (largest % y == 0):
             lcm = largest
             break
-        largest += 1
+        largest += 1   ## increment largest no by one and again check if it is divisible by both x and y
     return lcm
 
 
