@@ -12,9 +12,11 @@ def FirstFactorial(n):
   # code goes here
   if n == 1:
     fact =  1
+  elif n == 0:
+    fact = 1
   else:
     fact = n * FirstFactorial(n-1)
   return fact
 
 # keep this function call here 
-print(FirstFactorial(input()))
+print(FirstFactorial(int(input())))
