@@ -20,7 +20,7 @@ for i in str1:
 print(out)
 for i in str1:
     if i in out:
-        continue
+        continue  # to skip the current iteration
     else:
         out+= i
 print(out)
